@@ -1,0 +1,30 @@
+# Ignora arquivos temporários e de estado do Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+.plan
+.terraformrc
+.terraform.lock.hcl
+terraform.tfplan
+
+# Ignora arquivos temporários do docker-compose
+docker-compose.override.yml
+docker-compose.*.yml
+*.log
+.env
+.env.*
+
+# Ignora arquivos de saída temporários do sistema
+*.bak
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ignora todos os arquivos dentro do diretório localstack-scripts/docker-compose/volume
+localstack-scripts/docker-compose/volume/
